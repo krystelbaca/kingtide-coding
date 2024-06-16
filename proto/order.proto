@@ -2,7 +2,8 @@ syntax = "proto3";
 
 package order;
 
-import "product.proto";
+option go_package = "api-gateway/proto;order";
+
 
 service OrderService {
   rpc PlaceOrder (OrderRequest) returns (OrderResponse);

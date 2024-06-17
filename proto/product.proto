@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package product;
 
-option go_package = "api-gateway/proto;product";
+option go_package = "github.com/krystelbaca/kingtide-coding/api-gateway/proto/order";
 
 service ProductService {
   rpc CreateProduct (Product) returns (ProductResponse);
@@ -33,3 +33,4 @@ message ProductList {
 }
 
 message Empty {}
+ 

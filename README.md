@@ -11,7 +11,41 @@ This project demonstrates a microservices architecture using gRPC, NestJS, and G
 - **order-service/**: Contains the NestJS order service.
 - **api-gateway/**: Contains the Golang API gateway.
 - **docs/**: Contains documentation files.
-
+```
+kingtide-coding/
+├── proto/
+│   ├── product.proto
+│   └── order.proto
+├── product-service/
+│   ├── src/
+│   │   ├── main.ts
+│   │   ├── app.module.ts
+│   │   ├── product.controller.ts
+│   │   ├── product.service.ts
+│   │   └── interfaces/
+│   │       └── product.interface.ts
+│   ├── test/
+│   ├── package.json
+│   └── Dockerfile
+├── order-service/
+│   ├── src/
+│   │   ├── main.ts
+│   │   ├── app.module.ts
+│   │   ├── order.controller.ts
+│   │   ├── order.service.ts
+│   │   └── interfaces/
+│   │       └── order.interface.ts
+│   ├── test/
+│   ├── package.json
+│   └── Dockerfile
+├── api-gateway/
+│   ├── main.go
+│   ├── Dockerfile
+│   ├── go.mod
+│   └── go.sum
+├── docker-compose.yml
+├── README.md
+```
 ## Setup and Running the Project
 
 ### Prerequisites
@@ -49,7 +83,7 @@ Detailed API documentation is available in the [docs/api-documentation.md](docs/
 
 ## Architecture
 
-Detailed information about the architecture is available in the [docs/architecture.md](docs/architecture.md) file.
+![alt text](image.png)
 
 ## Security
 
